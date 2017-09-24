@@ -156,7 +156,7 @@ data "aws_route53_zone" "selected" {
 # ---------------------------------------------------------------------------------------------------------------------
 
 module "consul_cluster" {
-  source = "git::git@github.com:hashicorp/terraform-aws-consul.git//modules/consul-cluster?ref=v0.0.2"
+  source = "git::git@github.com:dgrstl/terraform-aws-consul.git//modules/consul-cluster
 
   cluster_name  = "${var.consul_cluster_name}"
   cluster_size  = "${var.consul_cluster_size}"
